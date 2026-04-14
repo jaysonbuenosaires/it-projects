@@ -1,0 +1,24 @@
+/* ═══════════════════════════════════════════════════════
+   POULTRYMART — Customer Portal Entry Point (customer-entry.css)
+═══════════════════════════════════════════════════════ */
+
+/* ── Layer 1: Base & Layout ──────────────────────────── */
+@import '/css/base/tokens.css';
+@import '/css/base/base.css';
+@import '/css/base/layout.css';
+
+/* ── Layer 2: Components ─────────────────────────────── */
+@import '/css/components/buttons.css';
+@import '/css/components/forms.css';
+@import '/css/components/cards.css';
+@import '/css/components/badges.css';
+@import '/css/components/tables.css';
+@import '/css/components/modals.css';
+@import '/css/components/toasts.css';
+@import '/css/components/portal-shell.css';
+
+/* ── Layer 3: Pages ──────────────────────────────────── */
+@import '/css/pages/customer.css';
+
+/* ── Layer 4: Utilities ──────────────────────────────── */
+@import '/css/utilities.css';

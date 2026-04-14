@@ -1,0 +1,166 @@
+/* ═══════════════════════════════════════════════════════════════
+   components/badges.css — Badge + Pill System
+   Depends on: tokens.css
+═══════════════════════════════════════════════════════════════ */
+
+/* ── Base status badge ───────────────────────────────────────── */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  line-height: 1.4;
+  letter-spacing: .02em;
+}
+
+/* ── Order status variants ───────────────────────────────────── */
+.status-Pending {
+  color: var(--status-pending-color);
+  background: var(--status-pending-bg);
+}
+
+.status-Packed {
+  color: var(--status-packed-color);
+  background: var(--status-packed-bg);
+}
+
+.status-Out-for-Delivery {
+  color: var(--status-transit-color);
+  background: var(--status-transit-bg);
+}
+
+.status-Arrived {
+  color: var(--status-arrived-color);
+  background: var(--status-arrived-bg);
+}
+
+.status-Completed {
+  color: var(--status-completed-color);
+  background: var(--status-completed-bg);
+}
+
+.status-Cancelled {
+  color: var(--status-cancelled-color);
+  background: var(--status-cancelled-bg);
+}
+
+/* ── Pay status variants ─────────────────────────────────────── */
+.pay-status-Unpaid  { color: var(--pay-unpaid-color);  background: var(--pay-unpaid-bg); }
+.pay-status-Paid    { color: var(--pay-paid-color);    background: var(--pay-paid-bg); }
+.pay-status-Partial { color: var(--pay-partial-color); background: var(--pay-partial-bg); }
+.pay-status-Refunded{ color: var(--pay-refunded-color);background: var(--pay-refunded-bg); }
+
+/* ── Pricing model badges ────────────────────────────────────── */
+.badge-model-catch {
+  color: var(--color-green-800);
+  background: var(--color-green-100);
+}
+
+.badge-model-pack {
+  color: var(--color-info);
+  background: var(--color-info-bg);
+}
+
+.badge-model-piece {
+  color: var(--color-terra-700);
+  background: var(--color-terra-100);
+}
+
+/* ── Unit badges ─────────────────────────────────────────────── */
+.unit-badge-kg    { color: var(--color-green-800); background: var(--color-green-100); }
+.unit-badge-pack  { color: var(--color-info);      background: var(--color-info-bg); }
+.unit-badge-piece { color: var(--color-terra-700); background: var(--color-terra-100); }
+
+/* ── Nav badge (sidebar count) ───────────────────────────────── */
+.nav-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 var(--space-1);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  color: var(--color-text-inverse);
+  background: var(--color-terra-500);
+  border-radius: var(--radius-full);
+  margin-left: auto;
+  line-height: 1;
+}
+
+.nav-badge:empty,
+.nav-badge[data-count="0"] { display: none; }
+
+.nav-badge-orange {
+  background: var(--color-terra-500);
+}
+
+/* ── Cart badge ──────────────────────────────────────────────── */
+.cart-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  font-size: 10px;
+  font-weight: var(--weight-bold);
+  color: var(--color-text-inverse);
+  background: var(--color-terra-500);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 2px solid var(--color-surface);
+}
+
+/* ── Notification badge ──────────────────────────────────────── */
+.notif-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  font-size: 10px;
+  font-weight: var(--weight-bold);
+  color: var(--color-text-inverse);
+  background: var(--color-danger);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 2px solid var(--color-surface);
+}
+
+/* ── Hero badge ──────────────────────────────────────────────── */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--color-green-800);
+  background: var(--color-green-100);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-green-200);
+  margin-bottom: var(--space-5);
+}
+
+/* ── Admin tag (sidebar) ─────────────────────────────────────── */
+.admin-tag {
+  padding: 2px 8px;
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  color: var(--color-terra-100);
+  background: rgba(212, 118, 59, .25);
+  border-radius: var(--radius-full);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
